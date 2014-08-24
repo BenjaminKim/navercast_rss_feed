@@ -1,0 +1,2 @@
+module NaverCastHelper
+end
