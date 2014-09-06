@@ -3,19 +3,10 @@ require 'open-uri'
 require 'ostruct'
 
 NAVER_CAST_BASE_URI = 'http://navercast.naver.com'
-CAST_INFO = {
-  it: {
-    cid: 122,
-    title: '네이버캐스트 IT 이야기'
-  },
-  method_dic: {
-    cid: 112,
-    title: '네이버 방법사전'
-  },
-}
 
-def fetch_data(cast_info_h)
-  doc = Nokogiri::HTML(open("#{NAVER_CAST_BASE_URI}/list.nhn?cid=#{cast_info_h[:cid]}&category_id=#{cast_info_h[:cid]}"))
+def fetch_data(cid)
+  doc = Nokogiri::HTML(open("#{NAVER_CAST_BASE_URI}/list.nhn?cid=#{cid}&category_id=#{cid}"))
+  feed_title = doc.css('title').first.text
   items = []
   doc.css('ul.card_lst div.card_w').each do |link|
     item = OpenStruct.new
@@ -27,7 +18,6 @@ def fetch_data(cast_info_h)
     end
 
     doc = Nokogiri::HTML(open(contents_uri))
-    parsed_obj = ''
     article_link = doc.css('div.smarteditor_area.naml_article').first
     puts "article_link: #{article_link}"
     parsed_obj = article_link
@@ -41,5 +31,8 @@ def fetch_data(cast_info_h)
     item.summary = parsed_obj.to_html
     items << item
   end
-  items
+  feed_data = OpenStruct.new
+  feed_data.title = feed_data.about = feed_title
+  Rails.logger.info("feed_data: #{feed_data.inspect}")
+  [items, feed_data]
 end
