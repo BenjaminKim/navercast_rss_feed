@@ -12,6 +12,6 @@ http://navercast.petabytes.org 를 선호하는 피드리더에 등록하면 서
 몇가지만 예를 들면,  
 
 * [건축 기행](http://navercast.naver.com/list.nhn?cid=118&category_id=118)
-  * [http://navercast.petabytes.org?cid=98](http://navercast.petabytes.org?cid=118)
+  * [http://navercast.petabytes.org?cid=118](http://navercast.petabytes.org?cid=118)
 * [상식백과](http://navercast.naver.com/list.nhn?cid=98&category_id=98)
   * [http://navercast.petabytes.org?cid=98](http://navercast.petabytes.org?cid=98)
