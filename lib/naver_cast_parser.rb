@@ -10,7 +10,7 @@ def fetch_data(cid)
   items = []
   doc.css('ul.card_lst div.card_w').each do |link|
     item = OpenStruct.new
-    item.title = HTML::FullSanitizer.new.sanitize(link.css('span.info').text)
+    item.title = Rails::Html::FullSanitizer.new.sanitize(link.css('span.info').text)
     item.link = NAVER_CAST_BASE_URI + link.css('a').attr('href')
 
     contents_uri = (NAVER_CAST_BASE_URI + link.css('a[href^="/contents.nhn"]').attr('href')).tap do |uri|
