@@ -43,6 +43,7 @@ gem 'unicorn'
 gem 'capistrano-rails', group: :development
 gem 'capistrano3-unicorn', group: :development
 gem 'capistrano-bundler', group: :development
+gem 'capistrano-rvm'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
