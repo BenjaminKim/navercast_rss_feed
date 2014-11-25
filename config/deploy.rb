@@ -36,4 +36,3 @@ set :default_env, { rvm_bin_path: '~/.rvm/bin' }
 set :keep_releases, 5
 set :unicorn_rack_env, :production
 after 'deploy:publishing', 'unicorn:restart'
-fetch(:default_env).merge!(rails_env: :production)
