@@ -14,18 +14,18 @@ def fetch_data(cid)
     item.link = NAVER_CAST_BASE_URI + link.css('a').attr('href')
 
     contents_uri = (NAVER_CAST_BASE_URI + link.css('a[href^="/contents.nhn"]').attr('href')).tap do |uri|
-      puts "Content Uri: #{uri}"
+      Rails.logger.debug "Content Uri: #{uri}"
     end
 
     doc = Nokogiri::HTML(open(contents_uri))
     article_link = doc.css('div.smarteditor_area.naml_article').first
-    puts "article_link: #{article_link}"
+    Rails.logger.debug "article_link: #{article_link}"
     parsed_obj = article_link
     datetime = article_link.css('div.t_pdate span').text
     if datetime.blank?
       item.updated = Time.now.utc.strftime('%FT%T%z')
     else
-      item.updated = Time.strptime(datetime, "%Y.%m.%d").utc.strftime('%FT%T%z')
+      item.updated = Time.strptime(datetime, '%Y.%m.%d').utc.strftime('%FT%T%z')
     end
 
     item.summary = parsed_obj.to_html
