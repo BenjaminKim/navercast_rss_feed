@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   get 'naver_cast/index'
-  get 'naver_cast/method_dic'
-
+  get 'author_contents_list.nhn', to: redirect { |_, req|
+                                  "http://navercast.naver.com#{req.original_fullpath}"
+                                }
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
