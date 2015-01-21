@@ -1,6 +1,6 @@
 app_dir = '/var/www/navercast_feed'
 
-worker_processes 8
+worker_processes 6
 working_directory app_dir + '/current'
 
 # Load app into the master before forking workers for super-fast
@@ -8,7 +8,7 @@ working_directory app_dir + '/current'
 preload_app true
 
 # nuke workers after 30 seconds (60 is the default)
-timeout 20
+timeout 30
 
 # Listen on a Unix data socket
 listen "#{app_dir}/shared/tmp/sockets/unicorn.socket", :backlog => 256
