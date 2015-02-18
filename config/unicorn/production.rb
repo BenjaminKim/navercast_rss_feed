@@ -1,6 +1,6 @@
 app_dir = '/var/www/navercast_feed'
 
-worker_processes 6
+worker_processes 4
 working_directory app_dir + '/current'
 
 # Load app into the master before forking workers for super-fast
@@ -8,10 +8,10 @@ working_directory app_dir + '/current'
 preload_app true
 
 # nuke workers after 30 seconds (60 is the default)
-timeout 30
+timeout 40
 
 # Listen on a Unix data socket
-listen "#{app_dir}/shared/tmp/sockets/unicorn.socket", :backlog => 256
+listen "#{app_dir}/shared/tmp/sockets/unicorn.socket", backlog: 256
 listen '127.0.0.1:3006'
 
 pid "#{app_dir}/shared/tmp/pids/unicorn.pid"
@@ -54,8 +54,6 @@ before_fork do |server, worker|
 end
 
 after_fork do |server, worker|
-
-
   # Unicorn master loads the app then forks off workers - because of the way
   # Unix forking works, we need to make sure we aren't using any of the parent's
   # sockets, e.g. db connection
@@ -65,7 +63,5 @@ after_fork do |server, worker|
   # on demand, so the master never opens a socket
 
   #rails_root = ENV['Rails.root'] || File.dirname(__FILE__) + '/../..'
-
-
 end
 
