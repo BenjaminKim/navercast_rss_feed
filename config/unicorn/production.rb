@@ -1,4 +1,4 @@
-app_dir = '~/navercast_feed'
+app_dir = '/home/ubuntu/navercast_feed'
 
 worker_processes 4
 working_directory app_dir + '/current'
