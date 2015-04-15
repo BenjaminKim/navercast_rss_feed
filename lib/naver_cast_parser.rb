@@ -8,7 +8,7 @@ def fetch_data(cid)
   doc = Nokogiri::HTML(open("#{NAVER_CAST_BASE_URI}/list.nhn?cid=#{cid}&category_id=#{cid}"))
   feed_title = doc.css('title').first.text
   items = []
-  doc.css('ul.card_lst div.card_w').each do |link|
+  doc.css('ul.card_lst div.card_w').lazy.first(5).each do |link|
     item = OpenStruct.new
     item.title = Rails::Html::FullSanitizer.new.sanitize(
       "#{link.css('span.info strong').text} - #{link.css('span.info span').text}"
@@ -35,6 +35,6 @@ def fetch_data(cid)
   end
   feed_data = OpenStruct.new
   feed_data.title = feed_data.about = feed_title
-  Rails.logger.info("feed_data: #{feed_data.inspect}")
+  Rails.logger.info("item count: #{items.size}, feed_data: #{feed_data.inspect}")
   [items, feed_data]
 end
