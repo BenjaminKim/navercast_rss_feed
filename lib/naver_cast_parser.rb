@@ -5,6 +5,7 @@ require 'ostruct'
 NAVER_CAST_BASE_URI = 'http://navercast.naver.com'
 
 def fetch_data(cid)
+  Rails.logger.info("fetch_data: #{cid}")
   doc = Nokogiri::HTML(open("#{NAVER_CAST_BASE_URI}/list.nhn?cid=#{cid}&category_id=#{cid}"))
   feed_title = doc.css('title').first.text
   items = []

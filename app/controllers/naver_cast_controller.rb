@@ -2,10 +2,14 @@ require 'naver_cast_parser'
 require 'rss'
 
 class NaverCastController < ApplicationController
+  CACHE_EXPIRING_TIME = Rails.env.production? ? 3.hours : 10.seconds
+
   def index
     cid = params[:cid] || 122
 
-    items_data, feed_data = fetch_data(cid)
+    items_data, feed_data = Rails.cache.fetch("cast_id/#{cid}", expires_in: CACHE_EXPIRING_TIME) do
+      fetch_data(cid)
+    end
     rss = RSS::Maker.make('atom') do |maker|
       maker.channel.author = 'Benjamin'
       maker.channel.about = feed_data.about
