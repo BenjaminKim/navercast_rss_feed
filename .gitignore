@@ -16,3 +16,4 @@
 !/log/.keep
 /tmp
 /.idea/
+/vendor/cache/libv8*darwin*.gem
