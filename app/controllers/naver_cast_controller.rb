@@ -2,7 +2,7 @@ require 'naver_cast_parser'
 require 'rss'
 
 class NaverCastController < ApplicationController
-  CACHE_EXPIRING_TIME = Rails.env.production? ? 3.hours : 10.seconds
+  CACHE_EXPIRING_TIME = Rails.env.production? ? 6.hours : 10.seconds
 
   def index
     cid = params[:cid] || 122
