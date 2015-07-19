@@ -15,7 +15,7 @@ set :deploy_to, '/home/ubuntu/navercast_feed'
 set :scm, :git
 
 # Default value for :format is :pretty
-set :format, :pretty
+#set :format, :pretty
 
 # Default value for :log_level is :debug
 set :log_level, :debug

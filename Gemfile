@@ -51,3 +51,4 @@ end
 
 gem 'capistrano-rvm'
 gem 'nokogiri'
+gem 'airbrussh', require: false
