@@ -53,3 +53,4 @@ gem 'capistrano-rvm'
 gem 'nokogiri'
 gem 'airbrussh', require: false
 gem 'kgio', '~> 2.9.3'
+gem 'raindrops', '~> 0.14.0'
