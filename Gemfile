@@ -52,3 +52,4 @@ end
 gem 'capistrano-rvm'
 gem 'nokogiri'
 gem 'airbrussh', require: false
+gem 'kgio', '~> 2.9.3'
