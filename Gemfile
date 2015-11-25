@@ -1,9 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2.0'
-
-gem 'sprockets'
+gem 'rails', '~> 4.2.5'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -52,5 +50,3 @@ end
 gem 'capistrano-rvm'
 gem 'nokogiri'
 gem 'airbrussh', require: false
-gem 'kgio', '~> 2.9.3'
-gem 'raindrops', '~> 0.14.0'
