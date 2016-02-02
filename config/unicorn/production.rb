@@ -1,6 +1,6 @@
 app_dir = '/home/ubuntu/navercast_feed'
 
-worker_processes 2
+worker_processes 3
 working_directory app_dir + '/current'
 
 # Load app into the master before forking workers for super-fast
