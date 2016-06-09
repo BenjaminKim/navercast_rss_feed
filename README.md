@@ -13,7 +13,7 @@
   * [신규] [건축법](http://navercast.naver.com/list.nhn?cid=2901&category_id=2901) http://navercast.petabytes.org?cid=2901
   * 서양건축사 http://navercast.petabytes.org?cid=121
   * 한국의 건축 http://navercast.petabytes.org?cid=276
-* 게임의 세계(종합) http://navercast.petabytes.org?cid=2882
+* 게임의 세계(종합) http://navercast.petabytes.org?cid=2881
   * [신규] [게임 개발자 이야기](http://navercast.naver.com/list.nhn?cid=2882&category_id=2882) http://navercast.petabytes.org?cid=2882
   * [신규] [게임대백과](http://navercast.naver.com/list.nhn?cid=2885&category_id=2885) http://navercast.petabytes.org?cid=2885
   * [신규] [바둑 이야기](http://navercast.naver.com/list.nhn?cid=2884&category_id=2884) http://navercast.petabytes.org?cid=2884
