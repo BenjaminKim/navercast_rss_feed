@@ -9,10 +9,15 @@
 
 * 건축 기행(종합) http://navercast.petabytes.org?cid=118
   * 건축 문화사 연표 http://navercast.petabytes.org?cid=124
+  * [신규] [건축과 미술](http://navercast.naver.com/list.nhn?cid=2902&category_id=2902) http://navercast.petabytes.org?cid=2902
+  * [신규] [건축법](http://navercast.naver.com/list.nhn?cid=2901&category_id=2901) http://navercast.petabytes.org?cid=2901
   * 서양건축사 http://navercast.petabytes.org?cid=121
   * 한국의 건축 http://navercast.petabytes.org?cid=276
-* 게임의 세계(종합) http://navercast.petabytes.org?cid=2881
-  * 게임대백과 http://navercast.petabytes.org?cid=2885
+* 게임의 세계(종합) http://navercast.petabytes.org?cid=2882
+  * [신규] [게임 개발자 이야기](http://navercast.naver.com/list.nhn?cid=2882&category_id=2882) http://navercast.petabytes.org?cid=2882
+  * [신규] [게임대백과](http://navercast.naver.com/list.nhn?cid=2885&category_id=2885) http://navercast.petabytes.org?cid=2885
+  * [신규] [바둑 이야기](http://navercast.naver.com/list.nhn?cid=2884&category_id=2884) http://navercast.petabytes.org?cid=2884
+  * [신규] [보드게임의 세계](http://navercast.naver.com/list.nhn?cid=2883&category_id=2883) http://navercast.petabytes.org?cid=2883
 * 공연스테이지(종합) http://navercast.petabytes.org?cid=142
   * 공연장 나들이 http://navercast.petabytes.org?cid=191
   * 뮤지컬 무대 http://navercast.petabytes.org?cid=143
@@ -24,6 +29,7 @@
   * 테마 경제학 http://navercast.petabytes.org?cid=2878
 * 매일의 디자인(종합) http://navercast.petabytes.org?cid=58
   * 디자이너 열전 http://navercast.petabytes.org?cid=60
+  * [신규] [생활을 바꾸는 디자인](http://navercast.naver.com/list.nhn?cid=2898&category_id=2898) http://navercast.petabytes.org?cid=2898
   * 시계이야기 http://navercast.petabytes.org?cid=174
   * 에코디자인 http://navercast.petabytes.org?cid=192
   * 패션 라이브러리 http://navercast.petabytes.org?cid=135
@@ -66,7 +72,7 @@
   * 원리사전 http://navercast.petabytes.org?cid=102
   * 직업의 세계 http://navercast.petabytes.org?cid=222
   * 허허 동의보감 http://navercast.petabytes.org?cid=239
-  * NCC 스페션 http://navercast.petabytes.org?cid=110
+  * NCC 스페셜 http://navercast.petabytes.org?cid=110
 * 스포츠월드(종합) http://navercast.petabytes.org?cid=205
   * 건강체조 http://navercast.petabytes.org?cid=70
   * 야구대백과 http://navercast.petabytes.org?cid=131
@@ -99,6 +105,7 @@
   * 화학산책 http://navercast.petabytes.org?cid=44
 * 음식과 요리(종합) http://navercast.petabytes.org?cid=53
   * 요리사의 요리 http://navercast.petabytes.org?cid=145
+  * [신규] [요리인류](http://navercast.naver.com/list.nhn?cid=2896&category_id=2896) http://navercast.petabytes.org?cid=2896
   * 차와 커피 http://navercast.petabytes.org?cid=173
   * 친환경 음식 http://navercast.petabytes.org?cid=202
   * 팔도식후경 http://navercast.petabytes.org?cid=43
@@ -112,11 +119,20 @@
   * 클래식 명곡 명연주 http://navercast.petabytes.org?cid=66
   * 클래식입문 ABC http://navercast.petabytes.org?cid=67
   * 팝 음악 http://navercast.petabytes.org?cid=240
+* [신규] [인문과 과학의 만남](http://navercast.naver.com/list.nhn?cid=2911&category_id=2911) http://navercast.petabytes.org?cid=2911
+  * [신규] [다산 교육법](http://navercast.naver.com/list.nhn?cid=2912&category_id=2912) http://navercast.petabytes.org?cid=2912
+  * [신규] [번안물로 본 사회와 문화](http://navercast.naver.com/list.nhn?cid=2913&category_id=2913) http://navercast.petabytes.org?cid=2913
+  * [신규] [본격 진화심리학](http://navercast.naver.com/list.nhn?cid=2918&category_id=2918) http://navercast.petabytes.org?cid=2918
+  * [신규] [서양 근대 인물 열전](http://navercast.naver.com/list.nhn?cid=2914&category_id=2914) http://navercast.petabytes.org?cid=2914
+  * [신규] [시, 몽상과 묵상](http://navercast.naver.com/list.nhn?cid=2917&category_id=2917) http://navercast.petabytes.org?cid=2917
+  * [신규] [울트라 소설](http://navercast.naver.com/list.nhn?cid=2915&category_id=2915) http://navercast.petabytes.org?cid=2915
+  * [신규] [의심의 철학](http://navercast.naver.com/list.nhn?cid=2916&category_id=2916) http://navercast.petabytes.org?cid=2916
 * 인물과 역사(종합) http://navercast.petabytes.org?cid=74
   * 독립운동가 http://navercast.petabytes.org?cid=129
   * 세계의 도서관 http://navercast.petabytes.org?cid=230
   * 우리 시대의 멘토 http://navercast.petabytes.org?cid=83
   * 인물세계사 http://navercast.petabytes.org?cid=75
+  * 인물한국사 http://navercast.petabytes.org?cid=77
   * 전쟁과 평화 http://navercast.petabytes.org?cid=257
   * 주제가 있는 미국사 http://navercast.petabytes.org?cid=214
   * 지식인의 서재 http://navercast.petabytes.org?cid=254
@@ -129,21 +145,24 @@
   * 생활 속의 심리학 http://navercast.petabytes.org?cid=133
   * 소비의 심리학 http://navercast.petabytes.org?cid=199
   * 정신의학의 결정적 순간 http://navercast.petabytes.org?cid=241
-  * 컬러 테라피 http://navercast.petabytes.org?cid=2880
+  * [신규] [컬러 테라피](http://navercast.naver.com/list.nhn?cid=2880&category_id=2880) http://navercast.petabytes.org?cid=2880
 * 지구촌 산책(종합) http://navercast.petabytes.org?cid=79
+  * [신규] [민족의 모자이크 유라시아](http://navercast.naver.com/list.nhn?cid=2899&category_id=2899) http://navercast.petabytes.org?cid=2899
+  * [신규] [세계 지리를 보다](http://navercast.naver.com/list.nhn?cid=2900&category_id=2900) http://navercast.petabytes.org?cid=2900
   * 세계의 걷고 싶은길 http://navercast.petabytes.org?cid=80
   * 세계의 명소 http://navercast.petabytes.org?cid=100
   * 세계 시장을 가다 http://navercast.petabytes.org?cid=2879
   * 지구촌 테마여행 http://navercast.petabytes.org?cid=126
   * 한 장의 그림 지도 http://navercast.petabytes.org?cid=91
 * 철학의 숲(종합) http://navercast.petabytes.org?cid=87
+  * [신규] [고전의 지혜](http://navercast.naver.com/list.nhn?cid=2886&category_id=2886) http://navercast.petabytes.org?cid=2886
   * 동양철학 읽기 http://navercast.petabytes.org?cid=237
   * 생활 속의 철학 http://navercast.petabytes.org?cid=88
   * 성장을 위한 철학노트 http://navercast.petabytes.org?cid=213
   * 음악으로 철학하기 http://navercast.petabytes.org?cid=223
+  * [신규] [철학, 욕망을 마주하다](http://navercast.naver.com/list.nhn?cid=2903&category_id=2903) http://navercast.petabytes.org?cid=2903
   * 철학적 사건 http://navercast.petabytes.org?cid=236
 * 취미의 발견(종합) http://navercast.petabytes.org?cid=179
-  * 게임대백과 http://navercast.petabytes.org?cid=195
   * 만화대백과 http://navercast.petabytes.org?cid=196
   * 미스터리와 보이지 않는 세계 http://navercast.petabytes.org?cid=275
   * 사진 강의실 http://navercast.petabytes.org?cid=46
