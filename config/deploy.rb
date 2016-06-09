@@ -1,4 +1,5 @@
-#config valid only for Capistrano 3.1
+# config valid only for current version of Capistrano
+lock '3.5.0'
 
 set :application, 'navercast_feed'
 set :repo_url, 'git@github.com:BenjaminKim/navercast_feed.git'
@@ -33,6 +34,6 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 set :default_env, { rvm_bin_path: '~/.rvm/bin' }
 
-set :keep_releases, 5
+set :keep_releases, 15
 set :unicorn_rack_env, :production
 after 'deploy:publishing', 'unicorn:restart'
