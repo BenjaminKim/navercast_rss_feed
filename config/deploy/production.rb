@@ -8,14 +8,13 @@ set :rails_env, :production
 # unless any hosts have the primary property set.
 role :app, %w{ubuntu@navercast.petabytes.org}
 role :web, %w{ubuntu@navercast.petabytes.org}
-role :db,  %w{ubuntu@navercast.petabytes.org}
 
 # Extended Server Syntax
 # ======================
 # This can be used to drop a more detailed server definition into the
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
-server 'navercast.petabytes.org', user: 'ubuntu', roles: %w{web app}, my_property: :my_value
+server 'b.petabytes.org', user: 'deploy', roles: %w{web app}
 
 # Custom SSH Options
 # ==================

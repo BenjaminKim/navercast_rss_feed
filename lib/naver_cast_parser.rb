@@ -9,7 +9,7 @@ def fetch_data(cid)
   doc = Nokogiri::HTML(open("#{NAVER_CAST_BASE_URI}/list.nhn?cid=#{cid}&category_id=#{cid}"))
   feed_title = doc.css('title').first.text
   items = []
-  doc.css('ul.card_lst div.card_w').lazy.first(3).each do |link|
+  doc.css('ul.card_lst div.card_w').lazy.first(30).each do |link|
     item = OpenStruct.new
     item.title = Rails::Html::FullSanitizer.new.sanitize(
       "#{link.css('span.info strong').text} - #{link.css('span.info span').text}"

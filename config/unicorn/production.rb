@@ -1,6 +1,6 @@
 app_dir = '/home/ubuntu/navercast_feed'
 
-worker_processes 3
+worker_processes 6
 working_directory app_dir + '/current'
 
 # Load app into the master before forking workers for super-fast
@@ -25,9 +25,7 @@ end
 before_fork do |server, worker|
   # the following is highly recomended for Rails + "preload_app true"
   # as there's no need for the master process to hold a connection
-  defined?(ActiveRecord::Base) and ActiveRecord::Base.connection.disconnect!
-
-#  Resque.redis.quit
+  # defined?(ActiveRecord::Base) and ActiveRecord::Base.connection.disconnect!
 
   ##
   # When sent a USR2, Unicorn will suffix its pidfile with .oldbin and
@@ -58,10 +56,9 @@ after_fork do |server, worker|
   # Unix forking works, we need to make sure we aren't using any of the parent's
   # sockets, e.g. db connection
 
-  defined?(ActiveRecord::Base) and ActiveRecord::Base.establish_connection
+  # defined?(ActiveRecord::Base) and ActiveRecord::Base.establish_connection
   # Redis and Memcached would go here but their connections are established
   # on demand, so the master never opens a socket
 
   #rails_root = ENV['Rails.root'] || File.dirname(__FILE__) + '/../..'
 end
-
