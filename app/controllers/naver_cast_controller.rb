@@ -27,6 +27,16 @@ class NaverCastController < ApplicationController
       maker.channel.updated = maker.items.max_by {|x| x.updated}.updated
     end
 
+    report_page_views(cid)
+
     render xml: rss.to_xml
   end
+
+  private
+    def report_page_views(cid)
+      key = "pv:#{Date.today}"
+      REDIS_POOL.with do |conn|
+        conn.hincrby(key, cid, 1)
+      end
+    end
 end
