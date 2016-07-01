@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-NavercastFeed::Application.config.secret_key_base = '0a132615f3a6426eb1f22ebb98986015878d55bd1706db8fb4b1738e95a7f5ecd1aab1eee0e736dd3919964fa59a136b6d391be34a01bcac0504e707a45a4842'
+NavercastRssFeed::Application.config.secret_key_base = '0a132615f3a6426eb1f22ebb98986015878d55bd1706db8fb4b1738e95a7f5ecd1aab1eee0e736dd3919964fa59a136b6d391be34a01bcac0504e707a45a4842'

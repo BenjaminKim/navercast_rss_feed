@@ -13,8 +13,9 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
+/tmp/*
 !/log/.keep
-/tmp
+!/tmp/.keep
 
 
 # See https://help.github.com/articles/ignoring-files for more about ignoring files.
@@ -51,3 +52,5 @@ alpha.sqlite3
 config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
+# Ignore Byebug command history file.
+.byebug_history
