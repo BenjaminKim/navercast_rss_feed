@@ -75,11 +75,13 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.2)
+    connection_pool (2.2.0)
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.7.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    hiredis (0.6.1)
     i18n (0.7.0)
     jbuilder (2.5.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -138,6 +140,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.16.0)
     rake (11.2.2)
+    redis (3.3.0)
     ref (2.0.0)
     sass (3.4.22)
     spring (1.7.1)
@@ -189,11 +192,14 @@ DEPENDENCIES
   capistrano-rvm
   capistrano3-unicorn
   coffee-rails
-  jbuilder (~> 2.0)
+  connection_pool
+  hiredis
+  jbuilder
   jquery-rails
   puma
   rails (~> 5.0.0)
   rails-html-sanitizer
+  redis
   spring
   sqlite3
   therubyracer
