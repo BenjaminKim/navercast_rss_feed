@@ -50,6 +50,8 @@ Rails.application.configure do
 
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
+  config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
   config.x.redis_spec = {
     host: 'localhost',
     port: 6380,
@@ -57,5 +59,4 @@ Rails.application.configure do
     timeout: 5,
     driver: :hiredis,
   }
-  config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 end
