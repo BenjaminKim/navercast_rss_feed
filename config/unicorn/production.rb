@@ -12,7 +12,6 @@ timeout 40
 
 # Listen on a Unix data socket
 listen "#{app_dir}/shared/tmp/sockets/unicorn.socket", backlog: 256
-listen '127.0.0.1:3006'
 
 pid "#{app_dir}/shared/tmp/pids/unicorn.pid"
 stderr_path "#{app_dir}/shared/log/unicorn.stderr.log"
