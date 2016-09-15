@@ -85,7 +85,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.x.redis_spec = {
-    host: 'localhost',
+    host: 'b.petabytes.org',
     port: 6379,
     db: 0,
     timeout: 5,
