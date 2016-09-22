@@ -7,13 +7,15 @@ set :unicorn_rack_env, :deployment
 # Supports bulk-adding hosts to roles, the primary
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
+role :app, %w{deploy@b.petabytes.org}
+role :web, %w{deploy@b.petabytes.org}
 
 # Extended Server Syntax
 # ======================
 # This can be used to drop a more detailed server definition into the
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
-server 'ec2-52-78-142-153.ap-northeast-2.compute.amazonaws.com', user: 'ubuntu', roles: %w{web app}
+server 'b.petabytes.org', user: 'deploy', roles: %w{web app}
 
 # Custom SSH Options
 # ==================
