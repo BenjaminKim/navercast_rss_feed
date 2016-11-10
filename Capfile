@@ -20,7 +20,7 @@ require 'capistrano/rvm'
 # require 'capistrano/chruby'
 require 'capistrano/bundler'
 require 'capistrano/rails'
-require 'capistrano3/puma'
+require 'capistrano/puma'
 require 'capistrano/puma/workers'
 require 'capistrano/puma/nginx'
 
