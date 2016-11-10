@@ -35,5 +35,3 @@ set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/sys
 set :default_env, { rvm_bin_path: '~/.rvm/bin' }
 
 set :keep_releases, 15
-set :unicorn_rack_env, :deployment
-after 'deploy:publishing', 'unicorn:restart'

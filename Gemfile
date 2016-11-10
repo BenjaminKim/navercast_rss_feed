@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
 # Use sqlite3 as the database for Active Record
@@ -44,7 +43,7 @@ group :development do
 
   # Use Capistrano for deployment
   gem 'capistrano-rails'
-  gem 'capistrano3-unicorn'
+  gem 'capistrano3-puma'
   gem 'capistrano-bundler'
   gem 'awesome_print'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -55,14 +54,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'capistrano-rvm'
 gem 'autoprefixer-rails'
-gem 'airbrussh', require: false
 gem 'bootstrap-sass'
 
 # Use Rails Html Sanitizer for HTML sanitization
 gem 'rails-html-sanitizer'
 
-# Use Unicorn as the app server
-gem 'unicorn'
 gem 'redis'
 gem 'hiredis'
 gem 'connection_pool'
