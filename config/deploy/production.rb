@@ -41,3 +41,22 @@ server 'b.petabytes.org', user: 'deploy', roles: %w{web app}
 #     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
 #   }
+
+set :puma_user, fetch(:user)
+set :puma_rackup, -> { File.join(current_path, 'config.ru') }
+set :puma_state, "#{shared_path}/tmp/pids/puma.state"
+set :puma_pid, "#{shared_path}/tmp/pids/puma.pid"
+set :puma_bind, "unix://#{shared_path}/tmp/sockets/puma.sock"    #accept array for multi-bind
+set :puma_default_control_app, "unix://#{shared_path}/tmp/sockets/pumactl.sock"
+set :puma_conf, "#{current_path}/config/puma/production.rb"
+set :puma_access_log, "#{shared_path}/log/production.log"
+set :puma_error_log, "#{shared_path}/log/production.log"
+set :puma_role, :app
+set :puma_env, fetch(:rack_env, fetch(:rails_env, 'production'))
+set :puma_threads, [1, 8]
+set :puma_workers, 2
+set :puma_worker_timeout, 30
+set :puma_init_active_record, true
+set :puma_preload_app, false
+set :puma_plugins, [:tmp_restart]  #accept array of plugins
+set :nginx_use_ssl, false
