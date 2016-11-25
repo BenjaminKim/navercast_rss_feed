@@ -28,6 +28,7 @@ class NaverCastController < ApplicationController
     end
 
     report_page_views(cid)
+    report_google_analytics(cid, items_data.title)
 
     render xml: rss.to_xml
   end

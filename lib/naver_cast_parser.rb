@@ -39,3 +39,15 @@ def fetch_data(cid)
   Rails.logger.info("item count: #{items.size}, feed_data: #{feed_data.inspect}")
   [items, feed_data]
 end
+
+def report_google_analytics(cid, feed_title)
+  RestClient.post('http://www.google-analytics.com/collect', {
+    v: '1',
+    tid: 'UA-87999219-1',
+    cid: SecureRandom.uuid,
+    t: 'pageview',
+    dh: 'navercast.petabytes.org',
+    dp: cid.to_s,
+    dt: feed_title,
+  })
+end
