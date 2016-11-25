@@ -40,14 +40,17 @@ def fetch_data(cid)
   [items, feed_data]
 end
 
-def report_google_analytics(cid, feed_title)
-  RestClient.post('http://www.google-analytics.com/collect', {
-    v: '1',
-    tid: 'UA-87999219-1',
-    cid: SecureRandom.uuid,
-    t: 'pageview',
-    dh: 'navercast.petabytes.org',
-    dp: cid.to_s,
-    dt: feed_title,
-  })
+def report_google_analytics(cid, feed_title, ua)
+  RestClient.post('http://www.google-analytics.com/collect',
+    {
+      v: '1',
+      tid: 'UA-87999219-1',
+      cid: SecureRandom.uuid,
+      t: 'pageview',
+      dh: 'navercast.petabytes.org',
+      dp: cid.to_s,
+      dt: feed_title,
+    },
+    user_agent: ua
+  )
 end

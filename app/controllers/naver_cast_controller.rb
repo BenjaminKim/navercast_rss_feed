@@ -27,8 +27,8 @@ class NaverCastController < ApplicationController
       maker.channel.updated = maker.items.max_by {|x| x.updated}.updated
     end
 
-    report_page_views(cid)
-    report_google_analytics(cid, feed_data.title)
+    report_page_views(cid) rescue nil
+    report_google_analytics(cid, feed_data.title, request.user_agent)
 
     render xml: rss.to_xml
   end
