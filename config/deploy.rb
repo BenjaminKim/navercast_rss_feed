@@ -30,5 +30,5 @@ set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/sys
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 set :default_env, { rvm_bin_path: '~/.rvm/bin' }
-
+set :rvm_ruby_version, '2.4.0'
 set :keep_releases, 15
