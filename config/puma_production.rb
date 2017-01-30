@@ -12,7 +12,7 @@ pidfile "#{shared_path}/tmp/pids/puma.pid"
 state_path "#{shared_path}/tmp/pids/puma.state"
 stdout_redirect "#{shared_path}/log/production.log", "#{shared_path}/log/production.log", true
 
-threads 1,8
+threads 4,8
 bind "unix://#{shared_path}/tmp/sockets/puma.sock"
 workers 2
 worker_timeout 30
