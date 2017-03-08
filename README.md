@@ -107,7 +107,6 @@
   * 요리사의 요리 http://navercast.petabytes.org?cid=145
   * [신규] [요리인류](http://navercast.naver.com/list.nhn?cid=2896&category_id=2896) http://navercast.petabytes.org?cid=2896
   * 차와 커피 http://navercast.petabytes.org?cid=173
-  * 친환경 음식 http://navercast.petabytes.org?cid=202
   * 팔도식후경 http://navercast.petabytes.org?cid=43
   * 푸드스토리 http://navercast.petabytes.org?cid=117
 * 음악의 선율(종합) http://navercast.petabytes.org?cid=65
