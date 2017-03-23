@@ -4,6 +4,18 @@ require 'ostruct'
 
 NAVER_CAST_BASE_URI = 'http://navercast.naver.com'
 
+def banner_html
+  <<~EOS
+    <div>
+      <p style="border-bottom: 5px solid #eaecef"/>
+      <h3>개발자들을 위한 어썸블로그 안드로이드앱이 출시되었습니다.</h3>
+      <a href="https://play.google.com/store/apps/details?id=org.petabytes.awesomeblogs">
+        <img src="https://github.com/jungilhan/awesome-blogs-android/raw/develop/screenshot.png" style="margin: 10px;">
+      </a>
+    </div>
+  EOS
+end
+
 def fetch_data(cid)
   Rails.logger.info("fetch_data: #{cid}")
   doc = Nokogiri::HTML(open("#{NAVER_CAST_BASE_URI}/list.nhn?cid=#{cid}&category_id=#{cid}"))
@@ -31,7 +43,7 @@ def fetch_data(cid)
       item.updated = Time.strptime(datetime, '%Y.%m.%d').utc.strftime('%FT%T%z')
     end
 
-    item.summary = parsed_obj.to_html
+    item.summary = parsed_obj.to_html + banner_html
     items << item
   end
   feed_data = OpenStruct.new
