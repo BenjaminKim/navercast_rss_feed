@@ -14,7 +14,7 @@ stdout_redirect "#{shared_path}/log/production.log", "#{shared_path}/log/product
 
 threads 4,8
 bind "unix://#{shared_path}/tmp/sockets/puma.sock"
-workers 2
+workers 3
 worker_timeout 30
 prune_bundler
 on_restart do
