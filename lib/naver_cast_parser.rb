@@ -9,7 +9,7 @@ def banner_html
     <div>
       <p style="border-bottom: 5px solid #eaecef"/>
       <h3>개발자들을 위한 어썸블로그 안드로이드앱이 출시되었습니다.</h3>
-      <a href="https://play.google.com/store/apps/details?id=org.petabytes.awesomeblogs">
+      <a href="https://play.google.com/store/apps/details?id=org.petabytes.awesomeblogs&referrer=utm_source%3Dnavercast">
         <img src="https://github.com/jungilhan/awesome-blogs-android/raw/develop/screenshot.png" style="margin: 10px;">
       </a>
     </div>
