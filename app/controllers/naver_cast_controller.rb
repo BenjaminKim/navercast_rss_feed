@@ -24,7 +24,7 @@ class NaverCastController < ApplicationController
         end
       end
 
-      maker.channel.updated = maker.items.max_by {|x| x.updated}.updated
+      maker.channel.updated = maker.items.max_by { |x| x&.updated.to_i }.updated
     end
 
     report_page_views(cid) rescue nil
@@ -34,10 +34,10 @@ class NaverCastController < ApplicationController
   end
 
   private
-    def report_page_views(cid)
-      key = "pv:#{Date.today}"
-      REDIS_POOL.with do |conn|
-        conn.hincrby(key, cid, 1)
-      end
+  def report_page_views(cid)
+    key = "pv:#{Date.today}"
+    REDIS_POOL.with do |conn|
+      conn.hincrby(key, cid, 1)
     end
+  end
 end
