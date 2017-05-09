@@ -14,7 +14,7 @@ class NavercastParser
     feed_title = doc.css('title').first.text
     puts "FEED_TITLE: #{feed_title}"
     items = []
-    doc.css('ul.thmb_lst dl').lazy.first(30).each do |link|
+    doc.css('ul.thmb_lst dl').lazy.first(15).each do |link|
       item = OpenStruct.new
       item.title = Rails::Html::FullSanitizer.new.sanitize(
         "#{link.css('dt a strong').text}"
@@ -26,12 +26,7 @@ class NavercastParser
       Rails.logger.debug "article_link: #{article_link}"
       parsed_obj = article_link
       datetime = article_link.css('div.box_regard ul li').last&.text
-      if datetime.blank?
-        item.updated = Time.now.utc.strftime('%FT%T%z')
-      else
-        puts "DATEITME: #{datetime}"
-        item.updated = Time.strptime(datetime, '%Y. %m. %d').utc.strftime('%FT%T%z')
-      end
+      Time.strptime(datetime, '%Y. %m. %d').utc.strftime('%FT%T%z') rescue Time.now.utc.strftime('%FT%T%z')
 
       item.summary = parsed_obj.to_html
       items << item
