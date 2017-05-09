@@ -1,4 +1,5 @@
 require 'rss'
+require 'navercast_parser'
 
 class NaverCastController < ApplicationController
   CACHE_EXPIRING_TIME = Rails.env.production? ? 6.hours : 20.seconds
@@ -6,6 +7,12 @@ class NaverCastController < ApplicationController
   def index
     cid = params[:cid] || 59088
     category_id = params[:category_id] || 59096
+
+    # 기존 IT 용어사용자만 우선 동작하게 해본다.
+    if cid == 122
+      cid = 59088
+      category_id = 59096
+    end
 
     items_data, feed_data = Rails.cache.fetch("cast_id/#{cid}", expires_in: CACHE_EXPIRING_TIME) do
       NavercastParser.fetch_data(cid, category_id)
