@@ -26,7 +26,7 @@ class NavercastParser
       Rails.logger.debug "article_link: #{article_link}"
       parsed_obj = article_link
       datetime = article_link.css('div.box_regard ul li').last&.text
-      Time.strptime(datetime, '%Y. %m. %d').utc.strftime('%FT%T%z') rescue Time.now.utc.strftime('%FT%T%z')
+      item.updated = Time.strptime(datetime, '%Y. %m. %d').utc.strftime('%FT%T%z') rescue Time.now.utc.strftime('%FT%T%z')
 
       item.summary = parsed_obj.to_html
       items << item
