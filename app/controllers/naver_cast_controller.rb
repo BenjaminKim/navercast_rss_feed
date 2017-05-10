@@ -6,8 +6,11 @@ class NaverCastController < ApplicationController
 
   def index
     cid = params[:cid] || 59088
-    category_id = params[:category_id] || 59096
+    category_id = params[:category_id]
 
+    if category_id.blank?
+      fail ArgumentError.new
+    end
     # 기존 IT 용어사용자만 우선 동작하게 해본다.
     # if cid == 122
     #   cid = 59088
