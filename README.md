@@ -29,10 +29,10 @@
 * 철학의 숲(종합) https://navercast.petabytes.org?cid=58757&categoryId=58757
 * 취미의 발견(종합) https://navercast.petabytes.org?cid=58758&categoryId=58758
 * 테크놀로지 월드(종합) https://navercast.petabytes.org?cid=58759&categoryId=58759
- * 디지털사회문화 https://navercast.petabytes.org?cid=59086&categoryId=59086
- * 무기의 세계 https://navercast.petabytes.org?cid=59087&categoryId=59087
- * 용어로 보는 IT https://navercast.petabytes.org?cid=59088&categoryId=59088
- * 자동차대백과 https://navercast.petabytes.org?cid=59089&categoryId=59089
+  * 디지털사회문화 https://navercast.petabytes.org?cid=59086&categoryId=59086
+  * 무기의 세계 https://navercast.petabytes.org?cid=59087&categoryId=59087
+  * 용어로 보는 IT https://navercast.petabytes.org?cid=59088&categoryId=59088
+  * 자동차대백과 https://navercast.petabytes.org?cid=59089&categoryId=59089
 * 파워라이터 ON(종합) https://navercast.petabytes.org?cid=59131&categoryId=59131
 * 화제의 인물(종합) https://navercast.petabytes.org?cid=58762&categoryId=58762
 * 헬로! 아티스트(종합) https://navercast.petabytes.org?cid=59154&categoryId=59154
