@@ -7,6 +7,7 @@
 아래 중 관심있는 주제의 url 을 선호하는 피드리더에 등록하면 서비스를 받아볼 수 있습니다.  
 혹시 카테고리의 아이디가 틀렸거나 새로 추가되는 것들이 있다면 자유롭게 추가해주시거나 제보 부탁드립니다.
 
+## 네이버캐스트
 * 건축기행(종합) https://navercast.petabytes.org?cid=58738&categoryId=58738
 * 게임의 세계(종합) https://navercast.petabytes.org?cid=58739&categoryId=58739
 * 공연스테이지(종합) https://navercast.petabytes.org?cid=58740&categoryId=58740
@@ -36,3 +37,13 @@
 * 파워라이터 ON(종합) https://navercast.petabytes.org?cid=59131&categoryId=59131
 * 화제의 인물(종합) https://navercast.petabytes.org?cid=58762&categoryId=58762
 * 헬로! 아티스트(종합) https://navercast.petabytes.org?cid=59154&categoryId=59154
+
+## [두산백과(종합)](http://terms.naver.com/list.nhn?cid=40942&categoryId=40942) https://navercast.petabytes.org?cid=40942&categoryId=40942
+* IT https://navercast.petabytes.org?cid=40942&categoryId=32827
+  * [IT 일반](http://terms.naver.com/list.nhn?cid=40942&categoryId=32828) http://terms.naver.com/list.nhn?cid=40942&categoryId=32828
+  * [하드웨어](http://terms.naver.com/list.nhn?cid=40942&categoryId=32829) https://navercast.petabytes.org?cid=40942&categoryId=32829
+  * [소프트웨어](http://terms.naver.com/list.nhn?cid=40942&categoryId=32836) https://navercast.petabytes.org?cid=40942&categoryId=32836
+  * [통신 및 네트워크](http://terms.naver.com/list.nhn?cid=40942&categoryId=32847) https://navercast.petabytes.org?cid=40942&categoryId=32847
+  * [인터넷](http://terms.naver.com/list.nhn?cid=40942&categoryId=32854) https://navercast.petabytes.org?cid=40942&categoryId=32854
+  
+## [건강백과(종합)](http://terms.naver.com/list.nhn?cid=40942&categoryId=40942) https://navercast.petabytes.org?cid=40942&categoryId=40942
