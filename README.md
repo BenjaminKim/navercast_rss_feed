@@ -46,4 +46,4 @@
   * [통신 및 네트워크](http://terms.naver.com/list.nhn?cid=40942&categoryId=32847) https://navercast.petabytes.org?cid=40942&categoryId=32847
   * [인터넷](http://terms.naver.com/list.nhn?cid=40942&categoryId=32854) https://navercast.petabytes.org?cid=40942&categoryId=32854
   
-## [건강백과(종합)](http://terms.naver.com/list.nhn?cid=40942&categoryId=40942) https://navercast.petabytes.org?cid=40942&categoryId=40942
+## [건강백과(종합)](http://terms.naver.com/list.nhn?cid=50871&categoryId=50871) https://navercast.petabytes.org/?cid=50871&categoryId=50871
