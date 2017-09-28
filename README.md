@@ -1,9 +1,12 @@
 네이버캐스트 RSS 피드
 ==============
 
-[![PayPayl donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MGCVHFBUUMSN6&lc=KR&item_name=navercast%20rss%20feed&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted "Donate once-off to this project using Paypal")
+# 서비스 종료
+2017년 9월 28일부로 서비스를 종료합니다.  
+소스코드는 계속 공개해둘 예정이니 필요시 사용하셔도 좋습니다.
 
-네이버에서 피드를 제공해주지 않아 HTML 파싱을 해서 개인 서버에서 직접 피드를 제공합니다.  
+# 개요
+네이버에서 피드를 제공해주지 않아 HTML 파싱을 해서 개인 서버에서 직접 피드를 제공합니다.  
 아래 중 관심있는 주제의 url 을 선호하는 피드리더에 등록하면 서비스를 받아볼 수 있습니다.  
 혹시 카테고리의 아이디가 틀렸거나 새로 추가되는 것들이 있다면 자유롭게 추가해주시거나 제보 부탁드립니다.
 
